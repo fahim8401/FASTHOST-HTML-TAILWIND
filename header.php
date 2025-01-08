@@ -1,4 +1,4 @@
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Tailwind CSS via CDN (Consider using a build process for production) -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -25,6 +25,25 @@
       background-color: rgba(0, 0, 0, 0.4);
     }
   </style>
+  <script>
+let closeDropdownTimeout;
+
+function toggleDropdown() {
+  const dropdownMenu = document.getElementById('dropdownMenu');
+  if (dropdownMenu.classList.contains('hidden')) {
+    // Show the menu and cancel any pending close timeout
+    dropdownMenu.classList.remove('hidden');
+    if (closeDropdownTimeout) {
+      clearTimeout(closeDropdownTimeout);
+    }
+  } else {
+    // Hide the menu after a 3-second delay
+    closeDropdownTimeout = setTimeout(() => {
+      dropdownMenu.classList.add('hidden');
+    }, 1500); // 3000ms = 3 seconds
+  }
+}
+</script>
 </head>
 <body class="bg-gray-100">
   
@@ -43,7 +62,7 @@
         <a href="index.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">Home</a>
         
         <!-- Domain Dropdown -->
-        <div class="relative group">
+        <div class="relative group" >
           <button aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center" >
             Domain
             <!-- Dropdown Arrow Icon -->
@@ -154,6 +173,18 @@
         </div>
         <!-- End Reseller Dropdown -->
         
+
+
+
+
+
+
+
+
+
+
+
+
        <!-- VPS Dropdown -->
 <div class="relative group">
   <button aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center">
@@ -483,29 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-  const dropdownButton = document.getElementById('hostingDropdownButton');
-  const dropdownMenu = document.getElementById('hostingDropdownMenu');
 
-  // Toggle dropdown menu on button click
-  dropdownButton.addEventListener('click', (e) => {
-    e.stopPropagation(); // Prevent the event from propagating
-    dropdownMenu.classList.toggle('hidden');
-    const isHidden = dropdownMenu.classList.contains('hidden');
-    dropdownButton.setAttribute('aria-expanded', !isHidden);
-  });
-
-  // Close dropdown menu if clicking outside
-  document.addEventListener('click', () => {
-    if (!dropdownMenu.classList.contains('hidden')) {
-      dropdownMenu.classList.add('hidden');
-      dropdownButton.setAttribute('aria-expanded', false);
-    }
-  });
-});
-
-</script>
 
 <!-- Add this CSS -->
 <style>
