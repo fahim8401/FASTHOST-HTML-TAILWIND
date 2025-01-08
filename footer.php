@@ -4,8 +4,8 @@
         <div class="text-white">
             <h2 class="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
             <p class="text-lg">
-                If you need help with selecting the right solution for your business, please call us at
-                <span class="font-semibold">01714038501</span> within 9:00AM - 9:00PM or you can start a live chat.
+                If you need help with selecting the right solution for your business,<br> please call us at
+                <span class="font-semibold">01714038501</span> within 9:00AM - 9:00PM or you can start a live chat.<br>
                 We are available 24/7 via live chat.
             </p>
             <!-- Buttons -->
