@@ -44,25 +44,31 @@ function toggleDropdown() {
 }
 </script>
 </head>
+<section class="group/nav">
 
-<body class="bg-gray-100">
+  <!-- <label for="dropdown" class="group-has-[:checked]/nav:absolute left-0 top-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen">
+  </label> -->
 	<!-- 🛠️ 1. Responsive Sticky Navigation Bar with Logo -->
-	<nav class="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
+	<nav class="bg-blue-700 text-white shadow-lg sticky top-0">
+      <div onclick='document.querySelectorAll("input.dropdown").forEach(input => input.checked = false)' class="group-has-[:checked]/nav:absolute left-0 top-0 h-0 w-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen">
+  </div>
 		<div class="container mx-auto flex justify-between items-center py-4 px-6">
 			<!-- Logo -->
 			<a href="index.php" class="flex items-center"> <img src="images/Asset 1-8.png" alt="HPLink Logo" class="h-8 w-auto mr-2"> <span class="text-2xl font-bold"></span> </a>
 			<!-- Navigation Links (Desktop) -->
 			<div class="hidden md:flex items-center space-x-4">
 				<!-- Home --><a href="index.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">Home</a>
+
 				<!-- Domain Dropdown -->
-				<div class="relative group">
-					<button aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Domain
+				<label class="relative group cursor-pointer">
+          <input type="checkbox" class="dropdown hidden" />
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Domain
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
-					</button>
+					</span>
 					<!-- Domain Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-200 z-50">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ">
 						<a href="Domain.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Register Domain Icon -->
 							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,17 +78,18 @@ function toggleDropdown() {
 							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /> </svg> Transfer Domain </a>
 					</div>
-				</div>
+				</label>
 				<!-- End Domain Dropdown -->
 				<!-- Hosting Dropdown -->
-				<div class="relative group">
-					<button aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Hosting
+				<label class="relative group cursor-pointer">
+          <input type="checkbox" class="dropdown hidden" />
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Hosting
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
-					</button>
+					</span>
 					<!-- Hosting Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-200 z-50">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100  ">
 						<a href="bdix-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- BDIX Icon --><i class="fa-solid fa-database w-4 h-4 mr-2"></i> BDIX Hosting </a>
 						<a href="germany-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800"> <i class="fa-solid fa-bangladeshi-taka-sign w-4 h-4 mr-2"></i> Cheap Hosting </a>
@@ -93,17 +100,18 @@ function toggleDropdown() {
 						<a href="corporate-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Corporate Icon --><i class="fa-solid fa-user-tie w-4 h-4 mr-2"></i> Corporate Hosting </a>
 					</div>
-				</div>
+				</label>
 				<!-- End Hosting Dropdown -->
 				<!-- 🆕 Reseller Dropdown -->
-				<div class="relative group">
-					<button aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Reseller
+				<label class="relative group cursor-pointer">
+          <input type="checkbox" class="dropdown hidden">
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Reseller
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
-					</button>
+					</span>
 					<!-- Reseller Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-200 z-50">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity- group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200  group-hover:scale-100 group-hover:opacity-100 ">
 						<a href="mini-reseller.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Mini Reseller Icon -->
 							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,17 +125,18 @@ function toggleDropdown() {
 							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14" /> </svg> Alpha Reseller </a>
 					</div>
-				</div>
+				</label>
 				<!-- End Reseller Dropdown -->
 				<!-- VPS Dropdown -->
-				<div class="relative group">
-					<button aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> VPS
+				<label class="relative group cursor-pointer">
+          <input type="checkbox" class="dropdown hidden">
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> VPS
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
-					</button>
+					</span>
 					<!-- VPS Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-200 z-50">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100  ">
 						<a href="linux-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Linux VPS Icon --><i class="fa-brands fa-linux w-4 h-4 mr-2"></i> Linux VPS </a>
 						<a href="windows-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
@@ -135,12 +144,14 @@ function toggleDropdown() {
 						<a href="Storage-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Storage VPS Icon --><i class="fa-solid fa-hard-drive w-4 h-4 mr-2"></i> Storage VPS </a>
 					</div>
-				</div>
+				</label>
 				<!-- End VPS Dropdown -->
+
 				<!-- Dedicated Server --><a href="dedicated-server.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800">Dedicated Server</a>
 				<!-- License --><a href="license.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800">License</a> <a href="offers.php" class="nav-link flex items-center px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">
           Offers <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded ml-2">1</span>
-        </a> <a href="contact.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">Contact</a> </div>
+        </a> <a href="contact.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">Contact</a>
+      </div>
 			<!-- Action Buttons (Desktop) -->
 			<div class="hidden md:flex items-center space-x-4">
 				<a href="https://fhostbd.com/portal/index.php?rp=/login" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center focus:ring-2 focus:ring-blue-500">
@@ -366,3 +377,4 @@ function toggleDropdown() {
 	</style>
 	<!-- 🏠 3. Example Content Below Navbar -->
 	<!-- Your page content goes here -->
+</section>
