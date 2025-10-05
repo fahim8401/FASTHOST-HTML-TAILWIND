@@ -49,33 +49,33 @@ function toggleDropdown() {
   <!-- <label for="dropdown" class="group-has-[:checked]/nav:absolute left-0 top-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen">
   </label> -->
 	<!-- 🛠️ 1. Responsive Sticky Navigation Bar with Logo -->
-	<nav class="bg-blue-700 text-white shadow-lg sticky top-0">
-      <div onclick='document.querySelectorAll("input.dropdown").forEach(input => input.checked = false)' class="group-has-[:checked]/nav:absolute left-0 top-0 h-0 w-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen">
+	<nav class="bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg sticky top-0 z-50">
+      <div onclick='document.querySelectorAll("input.dropdown").forEach(input => input.checked = false)' class="group-has-[:checked]/nav:absolute left-0 top-0 h-0 w-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen z-40">
   </div>
-		<div class="container mx-auto flex justify-between items-center py-4 px-6">
+		<div class="container mx-auto flex justify-between items-center py-3 px-4 sm:px-6">
 			<!-- Logo -->
-			<a href="index.php" class="flex items-center"> <img src="images/Asset 1-8.png" alt="HPLink Logo" class="h-8 w-auto mr-2"> <span class="text-2xl font-bold"></span> </a>
+			<a href="index.php" class="flex items-center transition-transform hover:scale-105"> <img src="images/Asset 1-8.png" alt="HPLink Logo" class="h-10 sm:h-12 w-auto mr-2"> <span class="text-xl sm:text-2xl font-bold"></span> </a>
 			<!-- Navigation Links (Desktop) -->
-			<div class="hidden md:flex items-center space-x-4">
-				<!-- Home --><a href="index.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">Home</a>
+			<div class="hidden lg:flex items-center space-x-2 xl:space-x-4">
+				<!-- Home --><a href="index.php" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:ring-2 focus:ring-blue-500">Home</a>
 
 				<!-- Domain Dropdown -->
 				<label class="relative group cursor-pointer">
           <input type="checkbox" class="dropdown hidden" />
-					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Domain
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:outline-none flex items-center"> Domain
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- Domain Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ">
-						<a href="Domain.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
+					<div class="absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-lg shadow-xl opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 border border-gray-200">
+						<a href="Domain.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
 							<!-- Register Domain Icon -->
-							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /> </svg> Register Domain </a>
-						<a href="https://fhostbd.com/portal/cart.php?a=add&domain=transfer" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
+						<a href="https://fhostbd.com/portal/cart.php?a=add&domain=transfer" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
 							<!-- Transfer Domain Icon -->
-							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /> </svg> Transfer Domain </a>
 					</div>
 				</label>
@@ -83,46 +83,46 @@ function toggleDropdown() {
 				<!-- Hosting Dropdown -->
 				<label class="relative group cursor-pointer">
           <input type="checkbox" class="dropdown hidden" />
-					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Hosting
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:outline-none flex items-center"> Hosting
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- Hosting Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100  ">
-						<a href="bdix-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- BDIX Icon --><i class="fa-solid fa-database w-4 h-4 mr-2"></i> BDIX Hosting </a>
-						<a href="germany-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800"> <i class="fa-solid fa-bangladeshi-taka-sign w-4 h-4 mr-2"></i> Cheap Hosting </a>
-						<a href="cloud-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- Cloud Icon --><i class="fa-solid fa-cloud w-4 h-4 mr-2"></i> Cloud Hosting </a>
-						<a href="premium-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- Premium Icon --><i class="fa-solid fa-ranking-star w-4 h-4 mr-2"></i> Premium Hosting </a>
-						<a href="corporate-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- Corporate Icon --><i class="fa-solid fa-user-tie w-4 h-4 mr-2"></i> Corporate Hosting </a>
+					<div class="absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-lg shadow-xl opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100 border border-gray-200">
+						<a href="bdix-hosting.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- BDIX Icon --><i class="fa-solid fa-database w-5 h-5 mr-3 text-blue-600"></i> BDIX Hosting </a>
+						<a href="germany-hosting.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200"> <i class="fa-solid fa-bangladeshi-taka-sign w-5 h-5 mr-3 text-blue-600"></i> Cheap Hosting </a>
+						<a href="cloud-hosting.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- Cloud Icon --><i class="fa-solid fa-cloud w-5 h-5 mr-3 text-blue-600"></i> Cloud Hosting </a>
+						<a href="premium-hosting.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- Premium Icon --><i class="fa-solid fa-ranking-star w-5 h-5 mr-3 text-blue-600"></i> Premium Hosting </a>
+						<a href="corporate-hosting.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- Corporate Icon --><i class="fa-solid fa-user-tie w-5 h-5 mr-3 text-blue-600"></i> Corporate Hosting </a>
 					</div>
 				</label>
 				<!-- End Hosting Dropdown -->
 				<!-- 🆕 Reseller Dropdown -->
 				<label class="relative group cursor-pointer">
           <input type="checkbox" class="dropdown hidden">
-					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> Reseller
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:outline-none flex items-center"> Reseller
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- Reseller Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity- group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200  group-hover:scale-100 group-hover:opacity-100 ">
-						<a href="mini-reseller.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
+					<div class="absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-lg shadow-xl opacity- group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100 border border-gray-200">
+						<a href="mini-reseller.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
 							<!-- Mini Reseller Icon -->
-							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14" /> </svg> Mini Reseller </a>
-						<a href="master-reseller.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
+						<a href="master-reseller.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
 							<!-- Master Reseller Icon -->
-							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14" /> </svg> Master Reseller </a>
-						<a href="alpha-reseller.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
+						<a href="alpha-reseller.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
 							<!-- Alpha Reseller Icon -->
-							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<svg class="w-5 h-5 mr-3 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14" /> </svg> Alpha Reseller </a>
 					</div>
 				</label>
@@ -130,47 +130,47 @@ function toggleDropdown() {
 				<!-- VPS Dropdown -->
 				<label class="relative group cursor-pointer">
           <input type="checkbox" class="dropdown hidden">
-					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:outline-none flex items-center"> VPS
+					<span aria-haspopup="true" aria-expanded="false" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:outline-none flex items-center"> VPS
 						<!-- Dropdown Arrow Icon -->
 						<svg class="inline ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- VPS Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100  ">
-						<a href="linux-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- Linux VPS Icon --><i class="fa-brands fa-linux w-4 h-4 mr-2"></i> Linux VPS </a>
-						<a href="windows-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- Windows VPS Icon --><i class="fa-brands fa-windows w-4 h-4 mr-2"></i> Windows VPS </a>
-						<a href="Storage-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
-							<!-- Storage VPS Icon --><i class="fa-solid fa-hard-drive w-4 h-4 mr-2"></i> Storage VPS </a>
+					<div class="absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-lg shadow-xl opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100 border border-gray-200">
+						<a href="linux-vps.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- Linux VPS Icon --><i class="fa-brands fa-linux w-5 h-5 mr-3 text-blue-600"></i> Linux VPS </a>
+						<a href="windows-vps.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- Windows VPS Icon --><i class="fa-brands fa-windows w-5 h-5 mr-3 text-blue-600"></i> Windows VPS </a>
+						<a href="Storage-vps.php" class="flex items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-700 transition-colors duration-200">
+							<!-- Storage VPS Icon --><i class="fa-solid fa-hard-drive w-5 h-5 mr-3 text-blue-600"></i> Storage VPS </a>
 					</div>
 				</label>
 				<!-- End VPS Dropdown -->
 
-				<!-- Dedicated Server --><a href="dedicated-server.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800">Dedicated Server</a>
-				<!-- License --><a href="license.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800">License</a> <a href="offers.php" class="nav-link flex items-center px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">
-          Offers <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded ml-2">1</span>
-        </a> <a href="contact.php" class="nav-link px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">Contact</a>
+				<!-- Dedicated Server --><a href="dedicated-server.php" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md">Dedicated Server</a>
+				<!-- License --><a href="license.php" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md">License</a> <a href="offers.php" class="nav-link flex items-center px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:ring-2 focus:ring-blue-500">
+          Offers <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded ml-2 animate-pulse">1</span>
+        </a> <a href="contact.php" class="nav-link px-3 xl:px-4 py-2 rounded transition-all duration-300 hover:bg-blue-800 hover:shadow-md focus:ring-2 focus:ring-blue-500">Contact</a>
       </div>
 			<!-- Action Buttons (Desktop) -->
-			<div class="hidden md:flex items-center space-x-4">
-				<a href="https://fhostbd.com/portal/index.php?rp=/login" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center focus:ring-2 focus:ring-blue-500">
+			<div class="hidden lg:flex items-center space-x-2 xl:space-x-3">
+				<a href="https://fhostbd.com/portal/index.php?rp=/login" class="bg-white text-blue-700 px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-gray-100 hover:shadow-md flex items-center focus:ring-2 focus:ring-blue-300">
 					<!-- Login Icon -->
 					<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3" /> </svg> Login </a>
-				<a href="https://fhostbd.com/portal/register.php" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 flex items-center focus:ring-2 focus:ring-green-500">
+				<a href="https://fhostbd.com/portal/register.php" class="bg-green-500 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-green-600 hover:shadow-md flex items-center focus:ring-2 focus:ring-green-300">
 					<!-- Sign-Up Icon -->
 					<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /> </svg> Sign-UP </a>
 			</div>
 			<!-- 🆕 Hamburger Menu Button (Mobile) -->
-			<button id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:bg-blue-800 focus:outline-none">
+			<button id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu" class="lg:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:bg-blue-800 focus:outline-none transition-all duration-300">
 				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /> </svg>
 			</button>
 		</div>
 		<!-- 🆕 Mobile Menu -->
-		<div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 bg-blue-700 px-6 py-4">
+		<div id="mobile-menu" class="hidden lg:hidden flex flex-col space-y-2 bg-gradient-to-r from-blue-700 to-blue-600 px-4 sm:px-6 py-4 shadow-inner">
 			<a href="index.php" class="nav-link flex items-center px-4 py-2 rounded hover:bg-blue-800 focus:ring-2 focus:ring-blue-500">
 				<!-- Home Icon -->
 				<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

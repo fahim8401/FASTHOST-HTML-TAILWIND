@@ -8,11 +8,17 @@
 <?php include 'header.php';?>
   
   <!-- 🏠 4. Hero Section (Another Example Content) -->
-  <section id="hero" class="pt-20 bg-blue-600 text-white">
-    <div class="container mx-auto px-6 py-20 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Reliable Hosting & VPS Solutions</h1>
-      <p class="text-lg md:text-2xl mb-8">Scalable, Secure, and Affordable Plans for Your Online Needs.</p>
-      <a href="#pricing" class="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Get Started</a>
+  <section id="hero" class="pt-16 sm:pt-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-24 text-center relative z-10">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in-up">Reliable Hosting & VPS Solutions</h1>
+      <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto text-gray-100">Scalable, Secure, and Affordable Plans for Your Online Needs.</p>
+      <a href="#pricing" class="inline-block bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">Get Started</a>
     </div>
   </section>
   
@@ -21,54 +27,48 @@
 
     
   <!-- 🛠️ 5. Services Section -->
-  <section id="services" class="py-20">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
-      <div class="flex flex-wrap -mx-4">
+  <section id="services" class="py-16 sm:py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         <!-- Service Card 1 -->
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-            <img src="images/Shared Hosting.png" alt="Shared Hosting" class="mx-auto h-16 w-16 mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Shared Hosting</h3>
-            <p class="text-gray-700 mb-4">Affordable hosting solution for personal and small business websites.</p>
-            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Plans</a>
-          </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <img src="images/Shared Hosting.png" alt="Shared Hosting" class="mx-auto h-16 w-16 sm:h-20 sm:w-20 mb-4 sm:mb-6">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-gray-800">Shared Hosting</h3>
+          <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Affordable hosting solution for personal and small business websites.</p>
+          <a href="pricing.html" class="inline-block bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 font-medium">View Plans</a>
         </div>
         <!-- Service Card 2 -->
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-            <img src="images/VPS Hosting.png" alt="VPS Hosting" class="mx-auto h-16 w-16 mb-4">
-            <h3 class="text-2xl font-semibold mb-2">VPS Hosting</h3>
-            <p class="text-gray-700 mb-4">High-performance VPS hosting for growing businesses and applications.</p>
-            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Plans</a>
-          </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <img src="images/VPS Hosting.png" alt="VPS Hosting" class="mx-auto h-16 w-16 sm:h-20 sm:w-20 mb-4 sm:mb-6">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-gray-800">VPS Hosting</h3>
+          <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">High-performance VPS hosting for growing businesses and applications.</p>
+          <a href="pricing.html" class="inline-block bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 font-medium">View Plans</a>
         </div>
         <!-- Service Card 3 -->
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
-            <img src="images/Dedicated Servers.png" alt="Dedicated Servers" class="mx-auto h-16 w-16 mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Dedicated Servers</h3>
-            <p class="text-gray-700 mb-4">Ultimate control and performance with our dedicated server solutions.</p>
-            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Plans</a>
-          </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <img src="images/Dedicated Servers.png" alt="Dedicated Servers" class="mx-auto h-16 w-16 sm:h-20 sm:w-20 mb-4 sm:mb-6">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-gray-800">Dedicated Servers</h3>
+          <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Ultimate control and performance with our dedicated server solutions.</p>
+          <a href="pricing.html" class="inline-block bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 font-medium">View Plans</a>
         </div>
       </div>
     </div>
   </section>
 <!-- 🏷 Enhanced Pricing Section with Toggle Buttons -->
-<section class="py-16 bg-gray-100" id="pricing">
-  <div class="container mx-auto px-6">
+<section class="py-16 sm:py-20 bg-gray-100" id="pricing">
+  <div class="container mx-auto px-4 sm:px-6">
     <!-- Section Title -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Our Hosting Plans</h2>
-      <p class="text-gray-600 text-lg">Choose the perfect plan that fits your needs.</p>
+    <div class="text-center mb-8 sm:mb-12">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4">Our Hosting Plans</h2>
+      <p class="text-gray-600 text-base sm:text-lg">Choose the perfect plan that fits your needs.</p>
     </div>
 
 <!-- Toggle Buttons Row -->
-<div class="mb-12 flex justify-center">
+<div class="mb-8 sm:mb-12 flex flex-wrap justify-center gap-3 sm:gap-4">
   <!-- cPanel Button (Active by Default) -->
   <button
-    class="toggle-button bg-green-500 text-white px-6 py-3 text-lg rounded-l-lg hover:bg-green-600 focus:outline-none border-2 border-green-500"
+    class="toggle-button bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg rounded-lg hover:bg-blue-700 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
     data-target="cpanel-plans"
     aria-pressed="true"
   >
@@ -77,7 +77,7 @@
 
   <!-- VPS Button -->
   <button
-    class="toggle-button bg-gray-300 text-gray-800 px-6 py-3 text-lg hover:bg-gray-400 focus:outline-none border-t-2 border-b-2 border-gray-300"
+    class="toggle-button bg-gray-300 text-gray-800 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg rounded-lg hover:bg-gray-400 focus:outline-none transition-all duration-300 hover:shadow-md"
     data-target="vps-plans"
     aria-pressed="false"
   >
@@ -86,7 +86,7 @@
 
   <!-- RDP Button -->
   <button
-    class="toggle-button bg-gray-300 text-gray-800 px-6 py-3 text-lg hover:bg-gray-400 focus:outline-none border-t-2 border-b-2 border-gray-300"
+    class="toggle-button bg-gray-300 text-gray-800 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg rounded-lg hover:bg-gray-400 focus:outline-none transition-all duration-300 hover:shadow-md"
     data-target="rdp-plans"
     aria-pressed="false"
   >
@@ -95,7 +95,7 @@
 
   <!-- Dedicated Button -->
   <button
-    class="toggle-button bg-gray-300 text-gray-800 px-6 py-3 text-lg hover:bg-gray-400 focus:outline-none rounded-r-lg border-2 border-gray-300"
+    class="toggle-button bg-gray-300 text-gray-800 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg rounded-lg hover:bg-gray-400 focus:outline-none transition-all duration-300 hover:shadow-md"
     data-target="dedicated-plans"
     aria-pressed="false"
   >
@@ -105,37 +105,37 @@
 
 
     <!-- Plans Wrapper -->
-    <div id="pricing-plans" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div id="pricing-plans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
       
       <!-- cPanel Hosting Plans -->
       <div id="cpanel-plans" class="plan-category">
         <!-- Plan 1: cPanel Basic -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col relative">
+        <div class="bg-white border-2 border-gray-200 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col relative transform hover:-translate-y-2">
           <!-- Badge / Ribbon (Optional) -->
-          <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs px-3 py-1 rounded-bl-lg">
+          <div class="absolute top-0 right-0 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs font-semibold px-3 py-1 rounded-bl-xl rounded-tr-xl shadow-md">
             Popular
           </div>
 
           <!-- Plan Content -->
-          <div class="p-6 flex flex-col flex-grow">
+          <div class="p-5 sm:p-6 flex flex-col flex-grow">
             <!-- Plan Title & Icon -->
             <div class="flex items-center mb-4">
               <!-- Replace with relevant icon -->
-              <svg class="w-8 h-8 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-7 h-7 sm:w-8 sm:h-8 text-blue-600 mr-2 sm:mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m-6 0h6" />
               </svg>
-              <h3 class="text-2xl font-semibold text-gray-800">cPanel Basic</h3>
+              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">cPanel Basic</h3>
             </div>
 
             <!-- Price -->
             <div class="mb-4">
-              <span class="text-4xl font-bold text-green-600">৳75</span>
-              <span class="text-lg text-gray-600">/mo</span>
+              <span class="text-3xl sm:text-4xl font-bold text-blue-600">৳75</span>
+              <span class="text-base sm:text-lg text-gray-600">/mo</span>
             </div>
 
             <!-- Billing Cycle Selector (Optional) -->
             <div class="mb-4">
-              <select class="w-full border border-green-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400">
+              <select class="w-full border-2 border-blue-200 rounded-lg px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all">
                 <option>1 Month - ৳75</option>
                 <option>3 Months - ৳200</option>
                 <option>6 Months - ৳380</option>
@@ -144,19 +144,19 @@
             </div>
 
             <!-- Features List -->
-            <ul class="mb-6 space-y-2 flex-grow">
-              <li class="flex items-center text-gray-700">
+            <ul class="mb-6 space-y-2 sm:space-y-3 flex-grow text-sm sm:text-base">
+              <li class="flex items-start text-gray-700">
                 <!-- Feature Icon -->
-                <svg class="w-5 h-5 text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-5 h-5 text-blue-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                500 MB NVMe SSD Storage
+                <span>500 MB NVMe SSD Storage</span>
               </li>
-              <li class="flex items-center text-gray-700">
-                <svg class="w-5 h-5 text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <li class="flex items-start text-gray-700">
+                <svg class="w-5 h-5 text-blue-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 016-3.464A4 4 0 0117 12h1a3 3 0 010 6H7a4 4 0 01-4-4z" />
                 </svg>
-                40 GB Traffic/month
+                <span>40 GB Traffic/month</span>
               </li>
               <li class="flex items-center text-gray-700">
                 <svg class="w-5 h-5 text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
