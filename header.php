@@ -7,6 +7,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="animations.js" defer></script>
 <!-- Custom Styles (Optional) -->
 <style>
 /* Custom scrollbar for dropdowns */
@@ -22,6 +23,48 @@
 
 ::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth scroll behavior */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Enhanced mobile menu transition */
+#mobile-menu {
+	transition: all 0.3s ease-in-out;
+}
+
+/* Better dropdown animations */
+.nav-link {
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background-color: white;
+	transition: all 0.3s ease;
+	transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+	width: 80%;
+}
+
+/* Professional card styles */
+.card-hover {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 </style>
 <script>
@@ -49,8 +92,8 @@ function toggleDropdown() {
   <!-- <label for="dropdown" class="group-has-[:checked]/nav:absolute left-0 top-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen">
   </label> -->
 	<!-- 🛠️ 1. Responsive Sticky Navigation Bar with Logo -->
-	<nav class="bg-blue-700 text-white shadow-lg sticky top-0">
-      <div onclick='document.querySelectorAll("input.dropdown").forEach(input => input.checked = false)' class="group-has-[:checked]/nav:absolute left-0 top-0 h-0 w-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen">
+	<nav class="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
+      <div onclick='document.querySelectorAll("input.dropdown").forEach(input => input.checked = false)' class="group-has-[:checked]/nav:absolute left-0 top-0 h-0 w-0 group-has-[:checked]/nav:h-screen group-has-[:checked]/nav:w-screen group-has-[:checked]/nav:bg-black group-has-[:checked]/nav:bg-opacity-50 group-has-[:checked]/nav:z-40">
   </div>
 		<div class="container mx-auto flex justify-between items-center py-4 px-6">
 			<!-- Logo -->
@@ -68,7 +111,7 @@ function toggleDropdown() {
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- Domain Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 ">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 z-50">
 						<a href="Domain.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Register Domain Icon -->
 							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -89,7 +132,7 @@ function toggleDropdown() {
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- Hosting Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100  ">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100 z-50">
 						<a href="bdix-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- BDIX Icon --><i class="fa-solid fa-database w-4 h-4 mr-2"></i> BDIX Hosting </a>
 						<a href="germany-hosting.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800"> <i class="fa-solid fa-bangladeshi-taka-sign w-4 h-4 mr-2"></i> Cheap Hosting </a>
@@ -111,7 +154,7 @@ function toggleDropdown() {
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- Reseller Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity- group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200  group-hover:scale-100 group-hover:opacity-100 ">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100 z-50">
 						<a href="mini-reseller.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Mini Reseller Icon -->
 							<svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -136,7 +179,7 @@ function toggleDropdown() {
 							<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.584l3.71-3.354a.75.75 0 111.04 1.08l-4 3.625a.75.75 0 01-1.04 0l-4-3.625a.75.75 0 01.02-1.06z" clip-rule="evenodd" /> </svg>
 					</span>
 					<!-- VPS Dropdown Menu -->
-					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100  ">
+					<div class="absolute left-0 mt-2 w-48 bg-blue-700 rounded-md shadow-lg opacity-0 group-has-[:checked]:opacity-100 cursor-pointer transform scale-0 overflow-hidden group-has-[:checked]:scale-100 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100 z-50">
 						<a href="linux-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
 							<!-- Linux VPS Icon --><i class="fa-brands fa-linux w-4 h-4 mr-2"></i> Linux VPS </a>
 						<a href="windows-vps.php" class="flex items-center px-4 py-2 text-sm text-white hover:bg-blue-800">
