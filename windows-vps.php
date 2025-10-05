@@ -12,8 +12,8 @@
 
 
 <!-- Section Under Header -->
-<div class="bg-gradient-to-b from-blue-200 to-white py-12">
-    <div class="container mx-auto px-6 md:px-12">
+<div class="bg-gradient-to-br from-blue-100 via-blue-50 to-white py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-12">
         <div class="flex flex-col md:flex-row items-center">
             <!-- Left Content -->
             <div class="w-full md:w-1/2 text-center md:text-left">
@@ -37,7 +37,7 @@
 
 <!-- Managed and Unmanaged VPS Section -->
 <div class="bg-white py-12">
-    <div class="container mx-auto px-6 md:px-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-12">
         <h3 class="text-2xl font-bold text-center text-blue-800 mb-6">
             <span class="text-orange-500">Managed</span> & Un-Managed Windows VPS
         </h3>
@@ -47,8 +47,8 @@
     </div>
 </div>
 
-   <div class="bg-gray-100 py-12">
-    <div class="container mx-auto px-6 md:px-12">
+   <div class="bg-gray-50 py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-12">
         <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">Unmanaged VPS</h2>
         <h6 class="text-1xl font-bold text-center text-gray-500 mb-4">An unmanaged VPS is a bare server instance with only the operating system installed. You can configure the server anyway by installing services and software to your requirements. It is cheaper but requires a high level. It's an instant service. Just Pay & get your Remote Desktop Access within a minute.
 
@@ -56,7 +56,7 @@
         
         <div class="grid gap-6 md:grid-cols-3">
             <!-- Card 1 -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition duration-300">
                 <div class="p-6 border-b">
                     <h3 class="text-xl font-bold text-blue-800">Windows VPS - 1</h3>
                     <p class="text-gray-600 mt-2">৳ 2,000 / Month</p>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <!-- Card 2 (Popular Plan) -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 relative">
+            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition duration-300 relative">
                 <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Popular</div>
                 <div class="p-6 border-b">
                     <h3 class="text-xl font-bold text-blue-800">Windows VPS - 2</h3>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition duration-300">
                 <div class="p-6 border-b">
                     <h3 class="text-xl font-bold text-blue-800">Windows VPS - 3</h3>
                     <p class="text-gray-600 mt-2">৳ 5,000 / Month</p>
@@ -116,7 +116,7 @@
             
             
              <!-- Card 4 -->
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 transition duration-300">
                 <div class="p-6 border-b">
                     <h3 class="text-xl font-bold text-blue-800">Windows VPS - 3</h3>
                     <p class="text-gray-600 mt-2">৳ 5,000 / Month</p>
