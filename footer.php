@@ -1,97 +1,94 @@
-<section class="bg-gradient-to-r from-blue-600 to-blue-400 py-12">
-    <div class="container mx-auto flex items-center justify-between px-6">
+<section class="bg-gradient-to-r from-blue-600 to-blue-500 py-12">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 gap-6">
         <!-- Text Content -->
-        <div class="text-white">
-            <h2 class="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
-            <p class="text-lg">
-                If you need help with selecting the right solution for your business,<br> please call us at
-                <span class="font-semibold">01714038501</span> within 9:00AM - 9:00PM or you can start a live chat.<br>
+        <div class="text-white text-center md:text-left">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Need a Custom Solution?</h2>
+            <p class="text-base md:text-lg">
+                If you need help with selecting the right solution for your business,<br class="hidden md:block"> please call us at
+                <span class="font-semibold">01714038501</span> within 9:00AM - 9:00PM or you can start a live chat.<br class="hidden md:block">
                 We are available 24/7 via live chat.
             </p>
             <!-- Buttons -->
-            <div class="mt-6">
-                <a href="tel:09613250250" class="bg-orange-500 text-white px-6 py-3 rounded shadow-md hover:bg-orange-600 mr-4">
+            <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="tel:09613250250" class="bg-orange-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 inline-block">
                     <i class="fas fa-phone-alt"></i> Call Us
                 </a>
-                <a href="#" class="bg-white text-orange-500 px-6 py-3 rounded shadow-md hover:bg-gray-200">
+                <a href="#" class="bg-white text-orange-500 px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 inline-block">
                     <i class="fas fa-comments"></i> Live Chat
                 </a>
             </div>
         </div>
         <!-- Image/Icon -->
-        <div>
-            <img src="images/calltoactionicon.svg" alt="Support Icon" class="w-40 h-40">
+        <div class="hidden md:block">
+            <img src="images/calltoactionicon.svg" alt="Support Icon" class="w-32 h-32 md:w-40 md:h-40">
         </div>
     </div>
 </section>
 
 <!-- 🦶 Enhanced Footer -->
-<footer class="bg-blue-700 text-gray-200 py-12">
-  <div class="container mx-auto px-6">
-    <div class="flex flex-col md:flex-row justify-between">
+<footer class="bg-gradient-to-b from-blue-700 to-blue-800 text-gray-200 py-12">
+  <div class="container mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
       <!-- About Us -->
-      <div class="mb-8 md:mb-0">
-        <a href="index.html" class="text-2xl font-bold text-White-600 mb-4 block">FASTHOSTBD</a>
-        <p class="text-gray-400">Providing top-notch hosting and VPS services since 2020.<br> We are committed to delivering <br>reliable and scalable solutions tailored to your needs.</p>
+      <div class="lg:col-span-1">
+        <a href="index.php" class="text-2xl font-bold text-white mb-4 block">FASTHOSTBD</a>
+        <p class="text-gray-300 text-sm">Providing top-notch hosting and VPS services since 2020. We are committed to delivering reliable and scalable solutions tailored to your needs.</p>
       </div>
       
       <!-- Quick Links -->
-      <div class="mb-8 md:mb-0">
+      <div class="lg:col-span-1">
         <h5 class="font-semibold text-lg mb-4">Quick Links</h5>
-        <ul>
-          <li class="mb-2"><a href="index.html" class="hover:text-white transition-colors duration-300">Home</a></li>
-          <li class="mb-2"><a href="services.html" class="hover:text-white transition-colors duration-300">Services</a></li>
-          <li class="mb-2"><a href="pricing.html" class="hover:text-white transition-colors duration-300">Pricing</a></li>
-          <li class="mb-2"><a href="contact.html" class="hover:text-white transition-colors duration-300">Contact</a></li>
+        <ul class="space-y-2">
+          <li><a href="index.php" class="hover:text-white transition-colors duration-300">Home</a></li>
+          <li><a href="Domain.php" class="hover:text-white transition-colors duration-300">Domain</a></li>
+          <li><a href="offers.php" class="hover:text-white transition-colors duration-300">Offers</a></li>
+          <li><a href="contact.php" class="hover:text-white transition-colors duration-300">Contact</a></li>
         </ul>
       </div>
       
       <!-- Services -->
-      <div class="mb-8 md:mb-0">
+      <div class="lg:col-span-1">
         <h5 class="font-semibold text-lg mb-4">Our Services</h5>
-        <ul>
-          <li class="mb-2"><a href="bdix-hosting.html" class="hover:text-white transition-colors duration-300">BDIX Hosting</a></li>
-          <li class="mb-2"><a href="germany-hosting.html" class="hover:text-white transition-colors duration-300">Germany Hosting</a></li>
-          <li class="mb-2"><a href="cloud-hosting.html" class="hover:text-white transition-colors duration-300">Cloud Hosting</a></li>
-          <li class="mb-2"><a href="premium-hosting.html" class="hover:text-white transition-colors duration-300">Premium Hosting</a></li>
-          <li class="mb-2"><a href="corporate-hosting.html" class="hover:text-white transition-colors duration-300">Corporate Hosting</a></li>
+        <ul class="space-y-2">
+          <li><a href="bdix-hosting.php" class="hover:text-white transition-colors duration-300">BDIX Hosting</a></li>
+          <li><a href="linux-vps.php" class="hover:text-white transition-colors duration-300">Linux VPS</a></li>
+          <li><a href="windows-vps.php" class="hover:text-white transition-colors duration-300">Windows VPS</a></li>
+          <li><a href="dedicated-server.php" class="hover:text-white transition-colors duration-300">Dedicated Server</a></li>
         </ul>
       </div>
       
       <!-- Contact Information -->
-      <div class="mb-8 md:mb-0">
+      <div class="lg:col-span-1">
         <h5 class="font-semibold text-lg mb-4">Contact Us</h5>
-        <ul>
-          <li class="mb-2 flex items-center">
-            <!-- Email Icon -->
-            <svg class="w-5 h-5 mr-2 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4m0 0l-4 4m4-4v12" />
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 mr-2 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:support@fhostbd.com" class="hover:text-white transition-colors duration-300">support@fhostbd.com</a>
+            <a href="mailto:support@fhostbd.com" class="hover:text-white transition-colors duration-300 text-sm">support@fhostbd.com</a>
           </li>
-          <li class="mb-2 flex items-center">
-            <!-- Phone Icon -->
-            <svg class="w-5 h-5 mr-2 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 016-3.464A4 4 0 0117 12h1a3 3 0 010 6H7a4 4 0 01-4-4z" />
+          <li class="flex items-center">
+            <svg class="w-5 h-5 mr-2 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <a href="tel:+01714038501" class="hover:text-white transition-colors duration-300">+8801714038501</a>
+            <a href="tel:+01714038501" class="hover:text-white transition-colors duration-300 text-sm">+8801714038501</a>
           </li>
-          <li class="mb-2 flex items-center">
-            <!-- Address Icon -->
-            <svg class="w-5 h-5 mr-2 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H3" />
+          <li class="flex items-start">
+            <svg class="w-5 h-5 mr-2 mt-0.5 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            <span>1039 Main St, Natore, BD</span>
+            <span class="text-sm">1039 Main St, Natore, BD</span>
           </li>
         </ul>
       </div>
       
       <!-- Newsletter Signup -->
-      <div class="mb-8 md:mb-0">
-        <h5 class="font-semibold text-lg mb-4">Subscribe to Our Newsletter</h5>
-        <form class="flex">
-          <input type="email" placeholder="Enter your email" class="px-2 py-1 rounded-l-md focus:outline-none text-gray-800">
-          <button type="submit" class="bg-green-500 text-white px-2 py-1 rounded-r-md hover:bg-green-600 transition-colors duration-300">Subscribe</button>
+      <div class="lg:col-span-1">
+        <h5 class="font-semibold text-lg mb-4">Newsletter</h5>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input type="email" placeholder="Enter your email" class="px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-800 flex-grow">
+          <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors duration-300 whitespace-nowrap">Subscribe</button>
         </form>
       </div>
     </div>
