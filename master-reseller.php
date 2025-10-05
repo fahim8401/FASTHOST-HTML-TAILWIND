@@ -8,27 +8,27 @@
 
  
   <!-- Main Content -->
-  <main class="container mx-auto px-6 py-12">
+  <main class="container mx-auto px-4 sm:px-6 py-12">
     <!-- Hero Section -->
-    <section class="bg-green-600 text-white py-20 rounded-md shadow-md">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Master Reseller Hosting</h1>
-        <p class="text-xl mb-8">Expand your hosting business with our advanced Master Reseller plans.</p>
-        <a href="#pricing" class="bg-white text-green-600 px-6 py-3 rounded-none font-semibold hover:bg-gray-100 transition">Get Started</a>
+    <section class="bg-gradient-to-r from-green-600 to-green-700 text-white py-16 md:py-20 rounded-lg shadow-xl animate-fade-in-up">
+      <div class="text-center px-4">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Master Reseller Hosting</h1>
+        <p class="text-lg md:text-xl mb-8">Expand your hosting business with our advanced Master Reseller plans.</p>
+        <a href="#pricing" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block">Get Started</a>
       </div>
     </section>
     <!-- End Hero Section -->
 
     <!-- Features Section -->
     <section class="py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-extrabold text-gray-800 mb-4">Why Choose Master Reseller Hosting?</h2>
-        <p class="text-gray-600 text-lg">Unlock premium features and unparalleled support to scale your business effectively.</p>
+      <div class="text-center mb-12 animate-on-scroll">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-800 mb-4">Why Choose Master Reseller Hosting?</h2>
+        <p class="text-gray-600 text-base md:text-lg">Unlock premium features and unparalleled support to scale your business effectively.</p>
       </div>
       <div class="flex flex-wrap -mx-4">
         <!-- Feature 1 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="feature-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="text-green-600 mb-4">
               <i class="fas fa-server fa-2x"></i>
             </div>
@@ -40,7 +40,7 @@
 
         <!-- Feature 2 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="feature-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="text-green-600 mb-4">
               <i class="fas fa-users fa-2x"></i>
             </div>
@@ -52,7 +52,7 @@
 
         <!-- Feature 3 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="feature-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="text-green-600 mb-4">
               <i class="fas fa-chart-line fa-2x"></i>
             </div>
@@ -64,7 +64,7 @@
 
         <!-- Feature 4 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="feature-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="text-green-600 mb-4">
               <i class="fas fa-lock fa-2x"></i>
             </div>
@@ -76,7 +76,7 @@
 
         <!-- Feature 5 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="feature-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="text-green-600 mb-4">
               <i class="fas fa-headset fa-2x"></i>
             </div>
@@ -88,7 +88,7 @@
 
         <!-- Feature 6 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="feature-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="text-green-600 mb-4">
               <i class="fas fa-dollar-sign fa-2x"></i>
             </div>
