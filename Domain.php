@@ -27,7 +27,7 @@
 
 
 <!-- Futuristic Text Slideshow -->
-<section class="bg-blue-700 py-12 text-white text-center">
+<section class="bg-gradient-to-r from-blue-700 to-blue-900 py-12 text-white text-center">
     <div class="overflow-hidden">
         <div class="slideshow-container">
             <p class="slideshow-text text-2xl md:text-4xl font-bold">
@@ -75,20 +75,20 @@
 
 <!-- Domain Search Section -->
 <section class="py-12 bg-gradient-to-r from-blue-500 to-blue-700 text-white relative overflow-hidden">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6 animate-fade-in-down">Find Your Perfect Domain</h2>
-        <p class="mb-8 text-lg animate-fade-in-up">Secure your desired domain name today and kickstart your online journey!</p>
-        <form action="https://fhostbd.com/portal/cart.php?a=add&domain=register" method="post" class="flex justify-center items-center gap-4 animate-slide-in-left">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll">Find Your Perfect Domain</h2>
+        <p class="mb-8 text-base md:text-lg animate-on-scroll">Secure your desired domain name today and kickstart your online journey!</p>
+        <form action="https://fhostbd.com/portal/cart.php?a=add&domain=register" method="post" class="flex flex-col sm:flex-row justify-center items-center gap-4 animate-slide-in-left px-4">
             <input 
                 type="text" 
                 name="query" 
                 placeholder="Enter your domain name" 
-                class="w-2/3 lg:w-1/2 px-4 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300"
+                class="w-full sm:w-2/3 lg:w-1/2 px-4 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300"
                 required 
             />
             <button 
                 type="submit" 
-                class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300">
+                class="w-full sm:w-auto bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300 transform hover:scale-105">
                 Search
             </button>
         </form>
@@ -96,31 +96,31 @@
     </div>
 
     <!-- Pricing Section -->
-    <div class="container mx-auto mt-10 text-center">
-        <h3 class="text-3xl font-semibold mb-6 animate-fade-in-down">Popular Domain Pricing</h3>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-gray-800">
+    <div class="container mx-auto mt-10 text-center px-4">
+        <h3 class="text-2xl md:text-3xl font-semibold mb-6 animate-on-scroll">Popular Domain Pricing</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-gray-800">
             <!-- .com -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="feature-card bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <h4 class="text-xl font-bold mb-2 text-blue-700">.com</h4>
                 <p class="text-lg font-semibold">$10.99/year</p>
             </div>
             <!-- .net -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="feature-card bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <h4 class="text-xl font-bold mb-2 text-blue-700">.net</h4>
                 <p class="text-lg font-semibold">$12.99/year</p>
             </div>
             <!-- .shop -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="feature-card bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <h4 class="text-xl font-bold mb-2 text-blue-700">.shop</h4>
                 <p class="text-lg font-semibold">$5.99/year</p>
             </div>
             <!-- .top -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="feature-card bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <h4 class="text-xl font-bold mb-2 text-blue-700">.top</h4>
                 <p class="text-lg font-semibold">$3.99/year</p>
             </div>
             <!-- .store -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="feature-card bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
                 <h4 class="text-xl font-bold mb-2 text-blue-700">.store</h4>
                 <p class="text-lg font-semibold">$9.99/year</p>
             </div>
@@ -133,18 +133,18 @@
 </section>
 <!-- Why Choose Us Section -->
 <section class="py-12 bg-gradient-to-r from-gray-50 to-gray-200">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">Why Choose Us</h2>
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 animate-on-scroll">Why Choose Us</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-6 bg-white shadow-lg rounded-lg">
+            <div class="feature-card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <h3 class="text-xl font-bold mb-2 text-blue-500">Reliable Network</h3>
                 <p>Our domain hosting services are powered by a highly reliable network infrastructure.</p>
             </div>
-            <div class="p-6 bg-white shadow-lg rounded-lg">
+            <div class="feature-card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <h3 class="text-xl font-bold mb-2 text-blue-500">Competitive Pricing</h3>
                 <p>Get the best deals on domain names with us!</p>
             </div>
-            <div class="p-6 bg-white shadow-lg rounded-lg">
+            <div class="feature-card p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <h3 class="text-xl font-bold mb-2 text-blue-500">24/7 Support</h3>
                 <p>We provide 24/7 support to assist you with any domain-related queries.</p>
             </div>
@@ -153,11 +153,11 @@
 </section>
 
 <!-- Contact Us Section -->
-<section class="py-12 bg-blue-500 text-white">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">Need Help?</h2>
+<section class="py-12 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 animate-on-scroll">Need Help?</h2>
         <p class="mb-8">If you have any questions about domains or need assistance, feel free to contact us.</p>
-        <a href="contact.php" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 transition duration-300">
+        <a href="contact.php" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 transition duration-300 transform hover:scale-105 inline-block">
             Contact Us
         </a>
     </div>

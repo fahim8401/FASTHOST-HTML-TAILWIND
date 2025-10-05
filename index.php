@@ -8,11 +8,11 @@
 <?php include 'header.php';?>
   
   <!-- 🏠 4. Hero Section (Another Example Content) -->
-  <section id="hero" class="pt-20 bg-blue-600 text-white">
-    <div class="container mx-auto px-6 py-20 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Reliable Hosting & VPS Solutions</h1>
-      <p class="text-lg md:text-2xl mb-8">Scalable, Secure, and Affordable Plans for Your Online Needs.</p>
-      <a href="#pricing" class="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Get Started</a>
+  <section id="hero" class="pt-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
+    <div class="container mx-auto px-6 py-20 text-center animate-fade-in-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">Reliable Hosting & VPS Solutions</h1>
+      <p class="text-lg md:text-2xl mb-8 animate-fade-in-up">Scalable, Secure, and Affordable Plans for Your Online Needs.</p>
+      <a href="#pricing" class="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 hover:shadow-lg transform hover:scale-105 transition-all duration-300 inline-block">Get Started</a>
     </div>
   </section>
   
@@ -21,45 +21,45 @@
 
     
   <!-- 🛠️ 5. Services Section -->
-  <section id="services" class="py-20">
+  <section id="services" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">Our Services</h2>
       <div class="flex flex-wrap -mx-4">
         <!-- Service Card 1 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <img src="images/Shared Hosting.png" alt="Shared Hosting" class="mx-auto h-16 w-16 mb-4">
             <h3 class="text-2xl font-semibold mb-2">Shared Hosting</h3>
             <p class="text-gray-700 mb-4">Affordable hosting solution for personal and small business websites.</p>
-            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Plans</a>
+            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300 inline-block">View Plans</a>
           </div>
         </div>
         <!-- Service Card 2 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <img src="images/VPS Hosting.png" alt="VPS Hosting" class="mx-auto h-16 w-16 mb-4">
             <h3 class="text-2xl font-semibold mb-2">VPS Hosting</h3>
             <p class="text-gray-700 mb-4">High-performance VPS hosting for growing businesses and applications.</p>
-            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Plans</a>
+            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300 inline-block">View Plans</a>
           </div>
         </div>
         <!-- Service Card 3 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+          <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <img src="images/Dedicated Servers.png" alt="Dedicated Servers" class="mx-auto h-16 w-16 mb-4">
             <h3 class="text-2xl font-semibold mb-2">Dedicated Servers</h3>
             <p class="text-gray-700 mb-4">Ultimate control and performance with our dedicated server solutions.</p>
-            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Plans</a>
+            <a href="pricing.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-300 inline-block">View Plans</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 <!-- 🏷 Enhanced Pricing Section with Toggle Buttons -->
-<section class="py-16 bg-gray-100" id="pricing">
+<section class="py-16 bg-gradient-to-b from-gray-100 to-white" id="pricing">
   <div class="container mx-auto px-6">
     <!-- Section Title -->
-    <div class="text-center mb-12">
+    <div class="text-center mb-12 animate-on-scroll">
       <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Our Hosting Plans</h2>
       <p class="text-gray-600 text-lg">Choose the perfect plan that fits your needs.</p>
     </div>
@@ -110,7 +110,7 @@
       <!-- cPanel Hosting Plans -->
       <div id="cpanel-plans" class="plan-category">
         <!-- Plan 1: cPanel Basic -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col relative">
+        <div class="pricing-card bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col relative transform hover:-translate-y-2">
           <!-- Badge / Ribbon (Optional) -->
           <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs px-3 py-1 rounded-bl-lg">
             Popular
@@ -580,16 +580,16 @@
 
 
   <!-- 💬 7. Testimonials Section -->
-  <section id="testimonials" class="py-20">
+  <section id="testimonials" class="py-20 bg-white">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll">What Our Customers Say</h2>
       <div class="flex flex-wrap -mx-4">
         <!-- Testimonial Card 1 -->
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <p class="text-gray-700 mb-4">"HPLink provided us with excellent VPS hosting that perfectly fits our needs. The support team is always responsive and helpful."</p>
             <div class="flex items-center">
-              <img src="images/user1.jpg" alt="Jane Doe" class="w-12 h-12 rounded-full mr-4">
+              <img src="images/user1.jpg" alt="Jane Doe" class="w-12 h-12 rounded-full mr-4 object-cover">
               <div>
                 <p class="font-semibold">Jane Doe</p>
                 <p class="text-sm text-gray-500">CEO, TechCorp</p>
@@ -599,10 +599,10 @@
         </div>
         <!-- Testimonial Card 2 -->
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <p class="text-gray-700 mb-4">"The shared hosting plans are affordable and reliable. We've had zero downtime since switching to HPLink."</p>
             <div class="flex items-center">
-              <img src="images/user2.jpg" alt="John Smith" class="w-12 h-12 rounded-full mr-4">
+              <img src="images/user2.jpg" alt="John Smith" class="w-12 h-12 rounded-full mr-4 object-cover">
               <div>
                 <p class="font-semibold">John Smith</p>
                 <p class="text-sm text-gray-500">Developer, WebSolutions</p>
@@ -612,10 +612,10 @@
         </div>
         <!-- Testimonial Card 3 -->
         <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="testimonial-card bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <p class="text-gray-700 mb-4">"Exceptional performance and scalability. HPLink's VPS hosting has allowed our applications to run smoothly."</p>
             <div class="flex items-center">
-              <img src="images/user3.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-4">
+              <img src="images/user3.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
               <div>
                 <p class="font-semibold">Alice Johnson</p>
                 <p class="text-sm text-gray-500">CTO, InnovateX</p>
@@ -629,10 +629,10 @@
   
   
   <!-- 🔰 6. IT Solutions / Stats Section -->
-<section id="it-solutions" class="py-16 bg-white">
+<section id="it-solutions" class="py-16 bg-gradient-to-r from-blue-50 to-white">
   <div class="container mx-auto px-6">
     <!-- Section Title -->
-    <div class="text-center mb-12">
+    <div class="text-center mb-12 animate-on-scroll">
       <h2 class="text-3xl md:text-4xl font-bold">MOST RESPECTED <span class="text-blue-600">IT SOLUTIONS</span> IN BANGLADESH</h2>
       <!-- Optional: Fancy divider or line -->
       <div class="flex items-center justify-center mt-2">
@@ -645,9 +645,9 @@
     </div>
 
     <!-- Stats Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <!-- Card 1 -->
-      <div class="border-2 border-blue-600 rounded-xl p-6 text-center transition transform hover:scale-105">
+      <div class="feature-card border-2 border-blue-600 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl bg-white">
         <!-- Icon (Example: Star icon for "Happy Customers") -->
         <div class="mb-4 text-blue-600 flex justify-center">
           <!-- Replace with your own SVG or image icon -->
@@ -662,7 +662,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="border-2 border-orange-600 rounded-xl p-6 text-center transition transform hover:scale-105">
+      <div class="feature-card border-2 border-orange-600 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl bg-white">
         <div class="mb-4 text-orange-600 flex justify-center">
           <!-- Icon for "Data Centers" -->
           <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
@@ -674,7 +674,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="border-2 border-blue-500 rounded-xl p-6 text-center transition transform hover:scale-105">
+      <div class="feature-card border-2 border-blue-500 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl bg-white">
         <div class="mb-4 text-blue-500 flex justify-center">
           <!-- Icon for "Years of Experience" -->
           <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
@@ -686,7 +686,7 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="border-2 border-teal-600 rounded-xl p-6 text-center transition transform hover:scale-105">
+      <div class="feature-card border-2 border-teal-600 rounded-xl p-6 text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl bg-white">
         <div class="mb-4 text-teal-600 flex justify-center">
           <!-- Icon for "Satisfaction Guarantee" -->
           <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
@@ -701,9 +701,9 @@
 </section>
 
  <!-- ❓ 4. FAQ Section -->
-  <section id="faq" class="py-16 bg-white">
+  <section id="faq" class="py-16 bg-gradient-to-b from-white to-gray-50">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-12">
+      <div class="text-center mb-12 animate-on-scroll">
         <h2 class="text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
         <p class="text-gray-600 mt-4">Find answers to the most common questions about our hosting services.</p>
       </div>
@@ -711,14 +711,14 @@
       <div class="max-w-3xl mx-auto">
         <!-- FAQ Item 1 -->
         <div class="mb-4 border-b border-gray-200">
-          <button class="w-full text-left py-4 focus:outline-none flex justify-between items-center" aria-expanded="false">
+          <button class="w-full text-left py-4 focus:outline-none flex justify-between items-center hover:text-blue-600 transition-colors duration-300" aria-expanded="false">
             <span class="text-lg font-medium">What is the uptime guarantee for your hosting plans?</span>
-            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
-          <div class="hidden">
-            <p class="py-2 text-gray-600">
+          <div class="hidden overflow-hidden transition-all duration-300">
+            <p class="py-2 pb-4 text-gray-600">
               We offer a 99.9% uptime guarantee on all our hosting plans. This ensures that your website remains accessible and performs optimally at all times.
             </p>
           </div>
