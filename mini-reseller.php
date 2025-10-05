@@ -28,7 +28,7 @@
       <div class="flex flex-wrap -mx-4">
         <!-- Feature 1 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
             <div class="text-green-600 mb-4">
               <i class="fas fa-server fa-2x"></i>
             </div>
@@ -40,7 +40,7 @@
 
         <!-- Feature 2 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
             <div class="text-green-600 mb-4">
               <i class="fas fa-users fa-2x"></i>
             </div>
@@ -52,7 +52,7 @@
 
         <!-- Feature 3 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
             <div class="text-green-600 mb-4">
               <i class="fas fa-chart-line fa-2x"></i>
             </div>
@@ -64,7 +64,7 @@
 
         <!-- Feature 4 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
             <div class="text-green-600 mb-4">
               <i class="fas fa-lock fa-2x"></i>
             </div>
@@ -76,7 +76,7 @@
 
         <!-- Feature 5 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
             <div class="text-green-600 mb-4">
               <i class="fas fa-headset fa-2x"></i>
             </div>
@@ -88,7 +88,7 @@
 
         <!-- Feature 6 -->
         <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+          <div class="bg-white rounded-xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
             <div class="text-green-600 mb-4">
               <i class="fas fa-dollar-sign fa-2x"></i>
             </div>
@@ -114,7 +114,7 @@
         <div class="flex flex-wrap -mx-4">
           <!-- Plan 1 -->
           <div class="w-full md:w-1/3 px-4 mb-8">
-            <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+            <div class="bg-white border border-gray-200 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col">
               <!-- Plan Header -->
               <div class="p-6 border-b border-gray-200">
                 <h3 class="text-2xl font-semibold text-gray-800">Starter</h3>
@@ -175,7 +175,7 @@
 
           <!-- Plan 2 -->
           <div class="w-full md:w-1/3 px-4 mb-8">
-            <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+            <div class="bg-white border border-gray-200 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col">
               <!-- Plan Header -->
               <div class="p-6 border-b border-gray-200">
                 <h3 class="text-2xl font-semibold text-gray-800">Professional</h3>
@@ -236,7 +236,7 @@
 
           <!-- Plan 3 -->
           <div class="w-full md:w-1/3 px-4 mb-8">
-            <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+            <div class="bg-white border border-gray-200 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col">
               <!-- Plan Header -->
               <div class="p-6 border-b border-gray-200">
                 <h3 class="text-2xl font-semibold text-gray-800">Enterprise</h3>
@@ -309,7 +309,7 @@
         <div class="flex flex-wrap -mx-4">
           <!-- Testimonial 1 -->
           <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="bg-white rounded-xl shadow-xl p-6">
               <div class="flex items-center mb-4">
                 <img src="https://via.placeholder.com/50" alt="Client Photo" class="w-12 h-12 rounded-full mr-4">
                 <div>
@@ -324,7 +324,7 @@
 
           <!-- Testimonial 2 -->
           <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="bg-white rounded-xl shadow-xl p-6">
               <div class="flex items-center mb-4">
                 <img src="https://via.placeholder.com/50" alt="Client Photo" class="w-12 h-12 rounded-full mr-4">
                 <div>
@@ -339,7 +339,7 @@
 
           <!-- Testimonial 3 -->
           <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="bg-white rounded-xl shadow-xl p-6">
               <div class="flex items-center mb-4">
                 <img src="https://via.placeholder.com/50" alt="Client Photo" class="w-12 h-12 rounded-full mr-4">
                 <div>

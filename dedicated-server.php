@@ -50,7 +50,7 @@
             <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">Why Choose Our Dedicated Servers?</h2>
             <div class="grid gap-6 md:grid-cols-3">
                 <!-- Feature 1 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
                     <i class="fa-solid fa-server text-blue-700 text-4xl"></i>
                     <h3 class="text-xl font-bold text-blue-800 mt-4">High Performance</h3>
                     <p class="text-gray-600 mt-2">
@@ -58,7 +58,7 @@
                     </p>
                 </div>
                 <!-- Feature 2 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
                     <i class="fa-solid fa-shield-alt text-blue-700 text-4xl"></i>
                     <h3 class="text-xl font-bold text-blue-800 mt-4">Enhanced Security</h3>
                     <p class="text-gray-600 mt-2">
@@ -66,7 +66,7 @@
                     </p>
                 </div>
                 <!-- Feature 3 -->
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                <div class="bg-white rounded-xl shadow-xl p-6 text-center">
                     <i class="fa-solid fa-user-cog text-blue-700 text-4xl"></i>
                     <h3 class="text-xl font-bold text-blue-800 mt-4">Full Customization</h3>
                     <p class="text-gray-600 mt-2">
@@ -83,7 +83,7 @@
             <h2 class="text-3xl font-bold text-center text-blue-800 mb-8">Our Dedicated Server Plans</h2>
             <div class="grid gap-6 md:grid-cols-3">
                 <!-- Plan 1 -->
-                <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-100 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transform hover:scale-105 transition duration-300">
                     <div class="p-6 border-b text-center">
                         <h3 class="text-xl font-bold text-blue-800">Dedicated Server - 1</h3>
                         <p class="text-gray-600 mt-2">৳ 12,000 / Month</p>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <!-- Plan 2 -->
-                <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-100 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transform hover:scale-105 transition duration-300">
                     <div class="p-6 border-b text-center">
                         <h3 class="text-xl font-bold text-blue-800">Dedicated Server - 2</h3>
                         <p class="text-gray-600 mt-2">৳ 18,000 / Month</p>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <!-- Plan 3 -->
-                <div class="bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-100 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transform hover:scale-105 transition duration-300">
                     <div class="p-6 border-b text-center">
                         <h3 class="text-xl font-bold text-blue-800">Dedicated Server - 3</h3>
                         <p class="text-gray-600 mt-2">৳ 25,000 / Month</p>

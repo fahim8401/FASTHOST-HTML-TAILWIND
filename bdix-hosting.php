@@ -11,56 +11,56 @@
   <!-- 🏠 3. Example Content Below Navbar -->
 
   <!-- 🏷 Hero Section -->
-  <section id="home" class="bg-green-600 text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-5xl font-bold mb-4">Reliable BDIX Hosting Services</h1>
-      <p class="text-xl mb-8">Fast, Secure, and Affordable Hosting Solutions Tailored for Your Needs.</p>
-      <a href="#pricing" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get Started</a>
+  <section id="home" class="bg-gradient-to-br from-green-600 via-green-700 to-green-800 text-white py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 sm:px-6 text-center relative z-10">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Reliable BDIX Hosting Services</h1>
+      <p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto">Fast, Secure, and Affordable Hosting Solutions Tailored for Your Needs.</p>
+      <a href="#pricing" class="inline-block bg-white text-green-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base">Get Started</a>
     </div>
   </section>
   <!-- End Hero Section -->
 
   <!-- 🏷 Features Section -->
-  <section id="services" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Why Choose BDIX Hosting?</h2>
-        <p class="text-gray-600 text-lg">Experience unmatched performance and support with our hosting services.</p>
+  <section id="services" class="py-12 sm:py-16 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4">Why Choose BDIX Hosting?</h2>
+        <p class="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">Experience unmatched performance and support with our hosting services.</p>
       </div>
-      <div class="flex flex-wrap -mx-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         <!-- Feature 1 -->
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-            <div class="text-green-600 mb-4">
-              <i class="fas fa-shield-alt fa-2x"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Secure Hosting</h3>
-            <p class="text-gray-700">Advanced security measures to protect your website from threats.</p>
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="text-green-600 mb-4 flex justify-center">
+            <i class="fas fa-shield-alt fa-3x"></i>
           </div>
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-center text-gray-800">Secure Hosting</h3>
+          <p class="text-gray-600 text-center text-sm sm:text-base">Advanced security measures to protect your website from threats.</p>
         </div>
         <!-- End Feature 1 -->
 
         <!-- Feature 2 -->
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-            <div class="text-green-600 mb-4">
-              <i class="fas fa-tachometer-alt fa-2x"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">High Performance</h3>
-            <p class="text-gray-700">Optimized servers ensure your website runs smoothly and efficiently.</p>
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="text-green-600 mb-4 flex justify-center">
+            <i class="fas fa-tachometer-alt fa-3x"></i>
           </div>
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-center text-gray-800">High Performance</h3>
+          <p class="text-gray-600 text-center text-sm sm:text-base">Optimized servers ensure your website runs smoothly and efficiently.</p>
         </div>
         <!-- End Feature 2 -->
 
         <!-- Feature 3 -->
-        <div class="w-full md:w-1/3 px-4 mb-8">
-          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-            <div class="text-green-600 mb-4">
-              <i class="fas fa-headset fa-2x"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">24x7 Support</h3>
-            <p class="text-gray-700">Our expert team is always available to assist you with any issues.</p>
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="text-green-600 mb-4 flex justify-center">
+            <i class="fas fa-headset fa-3x"></i>
           </div>
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-center text-gray-800">24x7 Support</h3>
+          <p class="text-gray-600 text-center text-sm sm:text-base">Our expert team is always available to assist you with any issues.</p>
         </div>
         <!-- End Feature 3 -->
       </div>
@@ -68,16 +68,16 @@
   </section>
   <!-- End Features Section -->
 <!-- 🏷 Pricing Section -->
-  <section class="py-16 bg-gray-100" id="pricing">
-    <div class="container mx-auto px-6">
+  <section class="py-12 sm:py-16 bg-gray-100" id="pricing">
+    <div class="container mx-auto px-4 sm:px-6">
       <!-- Section Title -->
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Our Hosting Plans</h2>
-        <p class="text-gray-600 text-lg">Choose the perfect plan that fits your needs.</p>
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4">Our Hosting Plans</h2>
+        <p class="text-gray-600 text-base sm:text-lg">Choose the perfect plan that fits your needs.</p>
       </div>
 
       <!-- Plans Wrapper -->
-      <div id="pricing-plans" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div id="pricing-plans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
         
         <!-- Card 1: 2GB cPanel Hosting -->
         <div class="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col relative">

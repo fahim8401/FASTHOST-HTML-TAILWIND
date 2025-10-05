@@ -74,55 +74,61 @@
 
 
 <!-- Domain Search Section -->
-<section class="py-12 bg-gradient-to-r from-blue-500 to-blue-700 text-white relative overflow-hidden">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6 animate-fade-in-down">Find Your Perfect Domain</h2>
-        <p class="mb-8 text-lg animate-fade-in-up">Secure your desired domain name today and kickstart your online journey!</p>
-        <form action="https://fhostbd.com/portal/cart.php?a=add&domain=register" method="post" class="flex justify-center items-center gap-4 animate-slide-in-left">
+<section class="py-12 sm:py-16 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <div class="container mx-auto text-center px-4 sm:px-6 relative z-10">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 animate-fade-in-down">Find Your Perfect Domain</h2>
+        <p class="mb-6 sm:mb-8 text-base sm:text-lg animate-fade-in-up max-w-2xl mx-auto">Secure your desired domain name today and kickstart your online journey!</p>
+        <form action="https://fhostbd.com/portal/cart.php?a=add&domain=register" method="post" class="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 animate-slide-in-left max-w-3xl mx-auto">
             <input 
                 type="text" 
                 name="query" 
                 placeholder="Enter your domain name" 
-                class="w-2/3 lg:w-1/2 px-4 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300"
+                class="w-full sm:w-2/3 px-4 sm:px-6 py-3 sm:py-4 rounded-full text-gray-700 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300 shadow-lg"
                 required 
             />
             <button 
                 type="submit" 
-                class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300">
+                class="w-full sm:w-auto bg-yellow-500 text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap">
                 Search
             </button>
         </form>
-        <p class="mt-6 text-sm">Check availability of .com, .net, .shop, .top, .store, and many more!</p>
+        <p class="mt-4 sm:mt-6 text-xs sm:text-sm text-gray-200">Check availability of .com, .net, .shop, .top, .store, and many more!</p>
     </div>
 
     <!-- Pricing Section -->
-    <div class="container mx-auto mt-10 text-center">
-        <h3 class="text-3xl font-semibold mb-6 animate-fade-in-down">Popular Domain Pricing</h3>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-gray-800">
+    <div class="container mx-auto mt-8 sm:mt-10 text-center px-4 sm:px-6 relative z-10">
+        <h3 class="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 animate-fade-in-down">Popular Domain Pricing</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 text-gray-800">
             <!-- .com -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
-                <h4 class="text-xl font-bold mb-2 text-blue-700">.com</h4>
-                <p class="text-lg font-semibold">$10.99/year</p>
+            <div class="bg-white rounded-xl p-4 sm:p-6 shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                <h4 class="text-lg sm:text-xl font-bold mb-2 text-blue-700">.com</h4>
+                <p class="text-base sm:text-lg font-semibold text-gray-800">$10.99/year</p>
             </div>
             <!-- .net -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
-                <h4 class="text-xl font-bold mb-2 text-blue-700">.net</h4>
-                <p class="text-lg font-semibold">$12.99/year</p>
+            <div class="bg-white rounded-xl p-4 sm:p-6 shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                <h4 class="text-lg sm:text-xl font-bold mb-2 text-blue-700">.net</h4>
+                <p class="text-base sm:text-lg font-semibold text-gray-800">$12.99/year</p>
             </div>
             <!-- .shop -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
-                <h4 class="text-xl font-bold mb-2 text-blue-700">.shop</h4>
-                <p class="text-lg font-semibold">$5.99/year</p>
+            <div class="bg-white rounded-xl p-4 sm:p-6 shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                <h4 class="text-lg sm:text-xl font-bold mb-2 text-blue-700">.shop</h4>
+                <p class="text-base sm:text-lg font-semibold text-gray-800">$5.99/year</p>
             </div>
             <!-- .top -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
-                <h4 class="text-xl font-bold mb-2 text-blue-700">.top</h4>
-                <p class="text-lg font-semibold">$3.99/year</p>
+            <div class="bg-white rounded-xl p-4 sm:p-6 shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                <h4 class="text-lg sm:text-xl font-bold mb-2 text-blue-700">.top</h4>
+                <p class="text-base sm:text-lg font-semibold text-gray-800">$3.99/year</p>
             </div>
             <!-- .store -->
-            <div class="bg-white rounded-lg p-6 shadow-lg transform hover:scale-105 transition-all duration-300">
-                <h4 class="text-xl font-bold mb-2 text-blue-700">.store</h4>
-                <p class="text-lg font-semibold">$9.99/year</p>
+            <div class="bg-white rounded-xl p-4 sm:p-6 shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+                <h4 class="text-lg sm:text-xl font-bold mb-2 text-blue-700">.store</h4>
+                <p class="text-base sm:text-lg font-semibold text-gray-800">$9.99/year</p>
             </div>
         </div>
     </div>
@@ -132,20 +138,20 @@
     <div class="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full opacity-10 animate-pulse"></div>
 </section>
 <!-- Why Choose Us Section -->
-<section class="py-12 bg-gradient-to-r from-gray-50 to-gray-200">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">Why Choose Us</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-6 bg-white shadow-lg rounded-lg">
-                <h3 class="text-xl font-bold mb-2 text-blue-500">Reliable Network</h3>
-                <p>Our domain hosting services are powered by a highly reliable network infrastructure.</p>
+<section class="py-12 sm:py-16 bg-gradient-to-r from-gray-50 to-gray-100">
+    <div class="container mx-auto text-center px-4 sm:px-6">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-gray-800">Why Choose Us</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div class="p-6 sm:p-8 bg-white shadow-lg rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-blue-600">Reliable Network</h3>
+                <p class="text-gray-600 text-sm sm:text-base">Our domain hosting services are powered by a highly reliable network infrastructure.</p>
             </div>
-            <div class="p-6 bg-white shadow-lg rounded-lg">
-                <h3 class="text-xl font-bold mb-2 text-blue-500">Competitive Pricing</h3>
-                <p>Get the best deals on domain names with us!</p>
+            <div class="p-6 sm:p-8 bg-white shadow-lg rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-blue-600">Competitive Pricing</h3>
+                <p class="text-gray-600 text-sm sm:text-base">Get the best deals on domain names with us!</p>
             </div>
-            <div class="p-6 bg-white shadow-lg rounded-lg">
-                <h3 class="text-xl font-bold mb-2 text-blue-500">24/7 Support</h3>
+            <div class="p-6 sm:p-8 bg-white shadow-lg rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-blue-600">24/7 Support</h3>
                 <p>We provide 24/7 support to assist you with any domain-related queries.</p>
             </div>
         </div>
@@ -153,11 +159,11 @@
 </section>
 
 <!-- Contact Us Section -->
-<section class="py-12 bg-blue-500 text-white">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">Need Help?</h2>
-        <p class="mb-8">If you have any questions about domains or need assistance, feel free to contact us.</p>
-        <a href="contact.php" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 transition duration-300">
+<section class="py-12 sm:py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+    <div class="container mx-auto text-center px-4 sm:px-6">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Need Help?</h2>
+        <p class="mb-6 sm:mb-8 text-sm sm:text-base max-w-2xl mx-auto">If you have any questions about domains or need assistance, feel free to contact us.</p>
+        <a href="contact.php" class="inline-block bg-yellow-500 text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Contact Us
         </a>
     </div>

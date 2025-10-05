@@ -19,89 +19,89 @@ include_once 'header.php'; // Header includes navigation
 
 <body class="bg-gray-100">
   <!-- Header Section -->
-  <header class="bg-blue-700 text-white py-16">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold">Exclusive Offers</h1>
-      <p class="mt-4 text-lg">Grab the best deals on hosting, licenses, and servers!</p>
+  <header class="bg-gradient-to-r from-blue-700 to-blue-600 text-white py-12 sm:py-16">
+    <div class="container mx-auto text-center px-4 sm:px-6">
+      <h1 class="text-3xl sm:text-4xl font-bold">Exclusive Offers</h1>
+      <p class="mt-4 text-base sm:text-lg max-w-2xl mx-auto">Grab the best deals on hosting, licenses, and servers!</p>
     </div>
   </header>
 
 
 <!-- Black Friday Deal Section -->
-<section class="container mx-auto py-16">
-  <h2 class="text-3xl font-bold text-center mb-10">Black Friday Deal</h2>
-  <p class="text-center text-gray-600 mb-10">Superfast Cloud VPS with NVMe storage and Free Licenses</p>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<section class="container mx-auto py-12 sm:py-16 px-4 sm:px-6">
+  <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-800">Black Friday Deal</h2>
+  <p class="text-center text-gray-600 mb-6 sm:mb-10 text-sm sm:text-base">Superfast Cloud VPS with NVMe storage and Free Licenses</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
     <!-- Card 1 -->
-    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+    <div class="bg-white shadow-xl rounded-xl p-5 sm:p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
       <div class="relative">
-        <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">Featured</span>
+        <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-lg">Featured</span>
       </div>
-      <h3 class="text-xl font-bold mb-2">Bundle 1</h3>
-      <p class="text-gray-500 text-sm mb-4">Bundle Deal!</p>
-      <ul class="text-gray-700 text-sm mb-4">
-        <li>Velocity-USA-NVMe VPS</li>
-        <li>6 vCPU, 12 GB RAM</li>
-        <li>200 GB NVMe</li>
-        <li>Free cPanel</li>
-        <li>Free Imunify360</li>
-        <li>Free CloudLinux</li>
-        <li>Free Softaculous</li>
-        <li>Free SitePad</li>
+      <h3 class="text-lg sm:text-xl font-bold mb-2 mt-6 text-gray-800">Bundle 1</h3>
+      <p class="text-gray-500 text-xs sm:text-sm mb-3 sm:mb-4">Bundle Deal!</p>
+      <ul class="text-gray-700 text-xs sm:text-sm mb-4 space-y-1 text-left">
+        <li>• Velocity-USA-NVMe VPS</li>
+        <li>• 6 vCPU, 12 GB RAM</li>
+        <li>• 200 GB NVMe</li>
+        <li>• Free cPanel</li>
+        <li>• Free Imunify360</li>
+        <li>• Free CloudLinux</li>
+        <li>• Free Softaculous</li>
+        <li>• Free SitePad</li>
       </ul>
-      <a href="#" class="block bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">Order Now</a>
+      <a href="#" class="block bg-orange-500 text-white py-2 sm:py-3 rounded-lg hover:bg-orange-600 transition-all duration-300 font-semibold shadow-md hover:shadow-lg text-sm sm:text-base">Order Now</a>
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+    <div class="bg-white shadow-xl rounded-xl p-5 sm:p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
       <div class="relative">
-        <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">Featured</span>
+        <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-lg">Featured</span>
       </div>
-      <h3 class="text-xl font-bold mb-2">Bundle 2</h3>
-      <p class="text-gray-500 text-sm mb-4">Bundle Deal!</p>
-      <ul class="text-gray-700 text-sm mb-4">
-        <li>Titan-USA-NVMe VPS</li>
-        <li>8 vCPU, 16 GB RAM</li>
-        <li>250 GB NVMe</li>
-        <li>Free cPanel</li>
-        <li>Free Imunify360</li>
-        <li>Free CloudLinux</li>
-        <li>Free LiteSpeed X</li>
-        <li>Free Softaculous</li>
-        <li>Free SitePad</li>
+      <h3 class="text-lg sm:text-xl font-bold mb-2 mt-6 text-gray-800">Bundle 2</h3>
+      <p class="text-gray-500 text-xs sm:text-sm mb-3 sm:mb-4">Bundle Deal!</p>
+      <ul class="text-gray-700 text-xs sm:text-sm mb-4 space-y-1 text-left">
+        <li>• Titan-USA-NVMe VPS</li>
+        <li>• 8 vCPU, 16 GB RAM</li>
+        <li>• 250 GB NVMe</li>
+        <li>• Free cPanel</li>
+        <li>• Free Imunify360</li>
+        <li>• Free CloudLinux</li>
+        <li>• Free LiteSpeed X</li>
+        <li>• Free Softaculous</li>
+        <li>• Free SitePad</li>
       </ul>
-      <a href="#" class="block bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">Order Now</a>
+      <a href="#" class="block bg-orange-500 text-white py-2 sm:py-3 rounded-lg hover:bg-orange-600 transition-all duration-300 font-semibold shadow-md hover:shadow-lg text-sm sm:text-base">Order Now</a>
     </div>
 
     <!-- Card 3 -->
-   <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+   <div class="bg-white shadow-xl rounded-xl p-5 sm:p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
       <div class="relative">
-        <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">Featured</span>
+        <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-lg">Featured</span>
       </div>
-      <h3 class="text-xl font-bold mb-2">Bundle 2</h3>
-      <p class="text-gray-500 text-sm mb-4">Bundle Deal!</p>
-      <ul class="text-gray-700 text-sm mb-4">
-        <li>Titan-USA-NVMe VPS</li>
-        <li>8 vCPU, 16 GB RAM</li>
-        <li>250 GB NVMe</li>
-        <li>Free cPanel</li>
-        <li>Free Imunify360</li>
-        <li>Free CloudLinux</li>
-        <li>Free LiteSpeed X</li>
-        <li>Free Softaculous</li>
-        <li>Free SitePad</li>
+      <h3 class="text-lg sm:text-xl font-bold mb-2 mt-6 text-gray-800">Bundle 3</h3>
+      <p class="text-gray-500 text-xs sm:text-sm mb-3 sm:mb-4">Bundle Deal!</p>
+      <ul class="text-gray-700 text-xs sm:text-sm mb-4 space-y-1 text-left">
+        <li>• Titan-USA-NVMe VPS</li>
+        <li>• 8 vCPU, 16 GB RAM</li>
+        <li>• 250 GB NVMe</li>
+        <li>• Free cPanel</li>
+        <li>• Free Imunify360</li>
+        <li>• Free CloudLinux</li>
+        <li>• Free LiteSpeed X</li>
+        <li>• Free Softaculous</li>
+        <li>• Free SitePad</li>
       </ul>
-      <a href="#" class="block bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">Order Now</a>
+      <a href="#" class="block bg-orange-500 text-white py-2 sm:py-3 rounded-lg hover:bg-orange-600 transition-all duration-300 font-semibold shadow-md hover:shadow-lg text-sm sm:text-base">Order Now</a>
     </div>
 
     <!-- Card 4 -->
-    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+    <div class="bg-white shadow-xl rounded-xl p-5 sm:p-6 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
       <div class="relative">
-        <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">Featured</span>
+        <span class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-lg">Featured</span>
       </div>
-      <h3 class="text-xl font-bold mb-2">Bundle 2</h3>
-      <p class="text-gray-500 text-sm mb-4">Bundle Deal!</p>
-      <ul class="text-gray-700 text-sm mb-4">
+      <h3 class="text-lg sm:text-xl font-bold mb-2 mt-6 text-gray-800">Bundle 4</h3>
+      <p class="text-gray-500 text-xs sm:text-sm mb-3 sm:mb-4">Bundle Deal!</p>
+      <ul class="text-gray-700 text-xs sm:text-sm mb-4 space-y-1 text-left">
         <li>Titan-USA-NVMe VPS</li>
         <li>8 vCPU, 16 GB RAM</li>
         <li>250 GB NVMe</li>
@@ -121,15 +121,15 @@ include_once 'header.php'; // Header includes navigation
 
 
   <!-- Offer Section -->
-  <section class="container mx-auto py-16">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Best Offers</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <section class="container mx-auto py-12 sm:py-16 px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-800">Our Best Offers</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       <!-- Offer 1 -->
-      <div class="bg-white shadow-md rounded-lg p-6 text-center">
-        <h3 class="text-2xl font-bold mb-4">50% Off VPS Hosting</h3>
-        <p class="text-gray-600 mb-6">Enjoy up to 50% off on all VPS hosting plans. Get blazing fast speed and reliable support.</p>
-        <span class="block text-3xl font-bold text-blue-700 mb-4">$9.99 <span class="text-sm font-normal line-through text-gray-400">$19.99</span></span>
-        <a href="#" class="block bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800">Claim Offer</a>
+      <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800">50% Off VPS Hosting</h3>
+        <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Enjoy up to 50% off on all VPS hosting plans. Get blazing fast speed and reliable support.</p>
+        <span class="block text-2xl sm:text-3xl font-bold text-blue-700 mb-3 sm:mb-4">$9.99 <span class="text-sm font-normal line-through text-gray-400">$19.99</span></span>
+        <a href="#" class="block bg-blue-600 text-white py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg text-sm sm:text-base">Claim Offer</a>
       </div>
 
       <!-- Offer 2 -->
@@ -175,11 +175,11 @@ include_once 'header.php'; // Header includes navigation
   </section>
 
   <!-- Call to Action Section -->
-  <section class="bg-blue-700 text-white py-10">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Don't Miss These Amazing Deals!</h2>
-      <p class="mb-6">Our offers are available for a limited time only. Act fast to make the most of these incredible discounts.</p>
-      <a href="#" class="bg-white text-blue-700 px-6 py-3 rounded-md hover:bg-gray-100">View All Plans</a>
+  <section class="bg-gradient-to-r from-blue-700 to-blue-600 text-white py-10 sm:py-12">
+    <div class="container mx-auto text-center px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Don't Miss These Amazing Deals!</h2>
+      <p class="mb-4 sm:mb-6 text-sm sm:text-base max-w-2xl mx-auto">Our offers are available for a limited time only. Act fast to make the most of these incredible discounts.</p>
+      <a href="#" class="inline-block bg-white text-blue-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base">View All Plans</a>
     </div>
   </section>
   
